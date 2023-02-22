@@ -12,6 +12,7 @@ var handle: VirtualTree
 var handle2: VirtualTree
 
 func _ready():
+	# functional component, a function that returns an element
 	var func_comp: Callable = func(props: Dictionary):
 		var list_children = {}
 		for i in range(BUTTONS_TO_MAKE):
@@ -19,6 +20,7 @@ func _ready():
 				size = props.button_size,
 			})
 		
+		# host components are the lowest level components that give instructions for creating godot node instances, denoted by Strings.
 		return Goact.create_element("VBoxContainer", {
 			size = props.panel_size,
 			position = props.panel_position,
@@ -32,6 +34,9 @@ func _ready():
 			Goact.unmount(handle)
 	})
 	
+	# create elements from components:
+	#	- functional (pass a lambda that returns an element)
+	#	- stateful ()
 	var element2: Element = Goact.create_element(func_comp, {
 		panel_position = Vector2(500, 0),
 		panel_size = Vector2(500, 200),
