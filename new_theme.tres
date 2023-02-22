@@ -1,0 +1,15 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://b5ggc21xylkt4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vng4t"]
+bg_color = Color(0, 0, 0, 0.454902)
+border_width_left = 24
+border_width_top = 24
+border_width_right = 24
+border_width_bottom = 24
+border_blend = true
+corner_radius_top_left = 64
+
+[resource]
+NewButton/base_type = &"Button"
+NewButton/colors/font_color = Color(0.854902, 0, 0.027451, 1)
+NewButton/styles/normal = SubResource("StyleBoxFlat_vng4t")
