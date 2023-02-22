@@ -35,7 +35,7 @@ func _ready():
 	})
 	
 	# create elements from components:
-	#	- functional (pass a lambda that returns an element)
+	#	- functional (pass a function that returns an element)
 	#	- stateful ()
 	var element2: Element = Goact.create_element(func_comp, {
 		panel_position = Vector2(500, 0),
