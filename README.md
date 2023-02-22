@@ -18,3 +18,8 @@
  ## Examples
   - In this repo there's a project that uses some components I made as examples of what Goact looks like.
   - It essentially is a button that toggles an FPS counter, and some UX things like a selection indicator that tweens in/out when you hover on the button.
+
+
+
+https://user-images.githubusercontent.com/9093986/220641131-63935925-43da-4c37-a8ce-8708322136a4.mp4
+
